@@ -23,10 +23,10 @@ def print_array(output_file, name, byte_array):
     num_bytes = sum(1 for byte in byte_array)
 
     for i in range(num_bytes):
-        if (i + 1) % 16 == 0:
-            print(f'0x{byte_array[i]:02X},', file=output_file, end='\r\n\t')
-        elif (i + 1) == num_bytes:
+        if (i + 1) == num_bytes:
             print(f'0x{byte_array[i]:02X}', file=output_file, end='};\r\n')
+        elif (i + 1) % 16 == 0:
+            print(f'0x{byte_array[i]:02X},', file=output_file, end='\r\n\t')
         else:
             print(f'0x{byte_array[i]:02X}, ', file=output_file, end='')
 
