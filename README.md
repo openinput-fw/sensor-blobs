@@ -1,16 +1,16 @@
 # sensor-blobs
 
-Mouse optical sensors proprietary firmware blobs
+Optical tracking sensor proprietary firmware blobs.
 
-format:
+Blob name format:
 
 `vendor_device_version.bin`
 
 *version may be omited
 
-## tools
+## Tools
 
-in [tools](tools/) you may find useful scripts to work with these blobs.
+In [tools](tools/) you may find useful scripts to work with these blobs.
 
 ### bin2header
 
